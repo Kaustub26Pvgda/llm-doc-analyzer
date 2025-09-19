@@ -75,7 +75,7 @@ cd llm-doc-analyzer
 
 ---
 
-## Niche Points & Notes
+## Points & Notes
 - **Confidence Metric:** The backend returns a confidence value for document type detection. If the LLM does not provide one, a default of 95% is used.
 - **Missing Fields:** If all required fields are present, a green message is shown in the details page.
 - **.env & Sensitive Files:** `.env`, `__pycache__`, and `.db` files are excluded from git via `.gitignore`.
