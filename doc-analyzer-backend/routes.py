@@ -63,6 +63,7 @@ def get_all_analysis(db: Session = Depends(get_db)):
     ]
 
 # Get analysis result by ID
+# this is majorly used
 @router.get("/analysis/{analysis_id}")
 def get_analysis(analysis_id: int, db: Session = Depends(get_db)):
     res = db.query(AnalysisResult).filter(AnalysisResult.id == analysis_id).first()
@@ -100,16 +101,11 @@ async def upload_pdf(file: UploadFile = File(...), db: Session = Depends(get_db)
     except Exception as e:
         return JSONResponse(status_code=500, content={"error": str(e)})
 
-
-# Pydantic model for /analyze request
-
-# Pydantic model for /analyze request
-
 # Pydantic model for /analyze request
 class AnalyzeRequest(BaseModel):
     document_id: int
 
-
+# LLM response generation route
 @router.post("/analyze")
 async def analyze_document(body: AnalyzeRequest, db: Session = Depends(get_db)):
     document_id = body.document_id

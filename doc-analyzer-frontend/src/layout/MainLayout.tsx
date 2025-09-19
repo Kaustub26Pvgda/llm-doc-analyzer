@@ -2,7 +2,7 @@ import React from "react";
 import { Link, Outlet } from "react-router-dom";
 import styles from "./MainLayout.module.css";
 import homeIcon from "../assets/home.png";
-
+// top navbar
 const MainLayout: React.FC = () => (
   <div className={styles.container}>
     <header className={styles.header}>
