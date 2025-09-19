@@ -1,0 +1,29 @@
+.homeCard {
+  max-width: 600px;
+  margin: 3rem auto;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  padding: 2rem;
+  text-align: center;
+}
+.title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+.desc {
+  color: #374151;
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+}
+.features {
+  list-style: disc;
+  margin: 1rem auto 0 auto;
+  padding-left: 1.5rem;
+  text-align: left;
+  color: #2563eb;
+}
+.features li {
+  margin-bottom: 0.5rem;
+}

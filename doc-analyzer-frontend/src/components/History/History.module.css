@@ -1,0 +1,86 @@
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+.pageButton {
+  background: #2563eb;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 0.5rem 1.2rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.pageButton:disabled {
+  background: #a5b4fc;
+  cursor: not-allowed;
+}
+.pageInfo {
+  font-size: 1.1rem;
+  color: #374151;
+  font-weight: 500;
+}
+.tableWrapper {
+  width: 96vw;
+  max-width: 1600px;
+  min-width: 340px;
+  margin: 2rem auto;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  padding: 2rem;
+  box-sizing: border-box;
+}
+.title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+.table th, .table td {
+  padding: 0.75rem 1rem;
+  text-align: left;
+}
+.table th {
+  background: #f3f4f6;
+  font-weight: 500;
+}
+.even {
+  background: #f9fafb;
+}
+.odd {
+  background: #fff;
+}
+.table tr:hover {
+  background: #e0e7ff;
+}
+.error {
+  color: #dc2626;
+  margin-top: 1rem;
+}
+.previewCell {
+  font-size: 0.95rem;
+  color: #374151;
+  max-width: 300px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.link {
+  color: #2563eb;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+.link:hover {
+  color: #1e40af;
+  text-decoration: underline;
+}
